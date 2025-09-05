@@ -1,0 +1,156 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+body::-webkit-scrollbar {
+  display: none;
+}
+@font-face {
+  font-family: "America Mono";
+  src: url("./fonts/GT-America-Mono-Thin.otf");
+}
+body {
+  background-color: #f6f6f6;
+  /* background-image: linear-gradient(#0f45c9, #f6f6f6); */
+  font-family: "America Mono";
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}
+a {
+  text-decoration: none;
+  color: black;
+  padding: 10px;
+}
+
+#txt-box {
+  font-family: "America Mono";
+  text-align: center;
+  font-size: 16px;
+  position: relative;
+  z-index: 10;
+  filter: contrast(9);
+}
+#logo {
+  padding-left: calc((100vw - 80vw) / 2);
+  width: 80vw;
+  padding-top: 30vh;
+  padding-bottom: 8vh;
+  position: relative;
+  font-family: "America Mono";
+  z-index: 10;
+  /* font-size: 200px; */
+  overflow: visible;
+  text-align: center;
+}
+
+
+.hidden {
+  display: none;
+}
+#klaviyo-container {
+  width: calc(100vw / 2);
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  z-index: 10;
+  font-size: 16px;
+}
+#close-sub {
+  float: right;
+  height: 30px;
+  padding: 15px;
+}
+#close-sub:hover {
+  cursor: pointer;
+}
+footer {
+  font-family: "Corona";
+  position: absolute;
+  bottom: 0;
+  padding: 5px 10px;
+  font-size: 9px;
+  height: fit-content;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+#arrow-square {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  cursor: pointer;
+}
+.nav-button {
+  font-family: "America Mono";
+  font-size: 16px;
+  border: none;
+  background: none;
+  text-align: left;
+  margin: 6px;
+  width: fit-content;
+  cursor: pointer;
+  border: 1px solid rgba(255, 255, 255, 0);
+}
+.nav-button:hover {
+  border: 1px solid black;
+  border-radius: 15px;
+}
+.lazy-fade {
+  animation: 0.5s lazyFade ease-in-out;
+}
+
+@keyframes lazyFade {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+.trail-element {
+  width: 500px;
+  height: 500px;
+  position: absolute;
+  z-index: -9;
+  background-color: rgba(255, 255, 255, 0);
+  background: radial-gradient(circle closest-side, #82f74f, transparent);
+  transform: translate(-50%, -50%);
+  opacity: 0.1;
+  animation: 10s colourShift infinite alternate-reverse;
+}
+@media only screen and (max-width: 800px) {
+  #logo {
+    width: 90vw;
+    padding-left: calc((100vw - 90vw) / 2);
+  }
+    #klaviyo-container {
+  width: 375px;
+}
+}
+@media only screen and (max-width: 600px) {
+  #logo {
+    padding-top: 35vh;
+    padding-bottom: 8vh;
+
+  }
+}
+@media only screen and (max-width: 400px) {
+  #logo {
+    padding-top: 40vh;
+    padding-bottom: 8vh;
+  }
+.nav-button {
+  font-size: 12px;
+  margin: 3px;
+}
+footer {
+  padding: 5px;
+}
+
+}
