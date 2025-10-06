@@ -1,0 +1,194 @@
+.outer {
+  min-height: calc(100vh - 310px); /* Minimum height to fill the viewport */
+  gap: 10px;
+  /* Change to a vertical flex layout */
+  align-items: flex-start;
+  flex-shrink: 0;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  padding-left: var(--left-pad);
+  padding-right: var(--left-pad);
+  padding-top: var(--top-pad);
+  padding-bottom: 150px;
+}
+.contactPage {
+  display: flex;
+  flex-direction: row-reverse;
+}
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.container-2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.rotation {
+  writing-mode: vertical-lr;
+  transform: rotate(180deg);
+  text-align: right;
+  min-width: fit-content;
+  padding-left: 10px;
+  padding-right: 2rem;
+  padding-top: 5rem;
+  font-family: "zurich";
+  font-size: 2.8rem;
+}
+.textbox {
+  width: 472px;
+
+  flex-shrink: 0;
+}
+.column {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  min-height: fit-content;
+}
+.container a {
+  text-decoration: underline;
+  font-weight: 200;
+  border-radius: 15px;
+}
+.container a:hover {
+  border-radius: 15px;
+  text-decoration: none;
+  background-color: #dadada;
+}
+
+.row-col {
+  display: flex;
+  flex-direction: row;
+}
+.links {
+  display: flex;
+  flex-direction: column;
+  padding-left: 10px;
+}
+.sub-wrap {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(246, 246, 246, 0.4);
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+  z-index: 100;
+  animation: fadeIn 1s linear;
+  text-align: right;
+  color: black;
+  font-family: "GT America";
+  font-size: 3.2rem;
+  line-height: 3.2rem;
+}
+.sub-inner {
+  width: 50vw;
+  height: 12rem;
+  background-color: #82f74f;
+  position: fixed;
+  z-index: 100;
+  top: calc(50vh - 6rem);
+  left: 25vw;
+  box-shadow: 6px 3px 15px rgba(0, 0, 0, 0.574);
+  padding: 1rem;
+  animation: fadeIn 0.3s linear;
+}
+
+.subBtn {
+  width: fit-content;
+}
+
+.details {
+  padding-left: 10px;
+  font-family: "GT America", sans-serif;
+  font-size: 1rem;
+  font-weight: 200;
+  line-height: 1.6;
+}
+
+.details * {
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  line-height: inherit;
+}
+
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .sub-inner {
+    box-sizing: border-box;
+    width: calc(100vw - 2rem);
+    height: 12rem;
+    margin: 1rem;
+    z-index: 100;
+
+    background-color: #82f74f;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    gap: 0.9rem;
+    top: calc(50vh - 6rem);
+    left: 0;
+    padding: 1rem;
+  }
+}
+@media only screen and (max-width: 970px) {
+  .contactPage {
+    flex-direction: column-reverse;
+  }
+  .container {
+    flex-direction: column;
+    width: 100%;
+  }
+  .outer {
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: var(--mob-pad-top);
+    padding-bottom: 0px;
+  }
+  .column {
+    width: 90vw;
+    padding-bottom: 50px;
+    min-height: 250px;
+  }
+  .textbox {
+    /* padding-bottom: 100px; */
+    width: 100%;
+  }
+  .rotation {
+    width: 0.5rem;
+    padding-top: 0px;
+  }
+  .left-col {
+    width: 100vw;
+    padding-right: 10px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .subscribe {
+    width: calc(100vw - 2rem);
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
