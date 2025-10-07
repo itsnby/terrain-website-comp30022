@@ -14399,16 +14399,16 @@
                       children: (0, Oe.jsx)("h3", { children: "FAQ" }),
                     }),
                   }),
-                  (0, Oe.jsx)("div", {
-                    className: De.AboutMenuSubHeading,
-                    onClick: () => o(i),
-                    children: (0, Oe.jsx)("span", {
-                      className: "sponsorsPartners" === s ? De.CurrentTab : De.NonCurrentTab,
-                      onMouseEnter: u,
-                      onMouseLeave: u,
-                      children: (0, Oe.jsx)("h3", { children: "SPONSORS AND PARTNERS" }),
-                    }),
-                  }),
+                  // (0, Oe.jsx)("div", {
+                  //   className: De.AboutMenuSubHeading,
+                  //   onClick: () => o(i),
+                  //   children: (0, Oe.jsx)("span", {
+                  //     className: "sponsorsPartners" === s ? De.CurrentTab : De.NonCurrentTab,
+                  //     onMouseEnter: u,
+                  //     onMouseLeave: u,
+                  //     children: (0, Oe.jsx)("h3", { children: "SPONSORS AND PARTNERS" }),
+                  //   }),
+                  // }),
                 ],
               }),
             })
@@ -14895,50 +14895,146 @@
                         ],
                       }),
                     }),
-                    (0, Oe.jsx)("div", {
-                      className: Ge,
-                      children: (0, Oe.jsxs)("div", {
-                        id: "sponsorsPartners",
-                        ref: i,
-                        className: Qe,
-                        children: [
-                          (0, Oe.jsx)("h5", { children: "SPONSORS AND PARTNERS" }),
-                          (0, Oe.jsxs)("p", {
-                            children: [
-                              "We extend heartfelt thanks and recognise each of our incredible partners, sponsors and donors; whose generous support and engagement play a vital role in not just making our work and projects possible, but in amplifying their impact, and driving our mission forward in practice.",
-                            ],
-                          }),
-                          (0, Oe.jsx)("h7", { children: "BIOASSEMBLY PARTNERS" }),
-                          (0,Oe.jsx)("img",{src:"/media/sponsor-logos/arcteryx-logo.png",alt:"Arc'teryx",className:"partner-logo"}),
+                    // (0, Oe.jsx)("div", {
+                    //   className: Ge,
+                    //   children: (0, Oe.jsxs)("div", {
+                    //     id: "sponsorsPartners",
+                    //     ref: i,
+                    //     className: Qe,
+                    //     children: [
+                    //       (0, Oe.jsx)("h5", { children: "SPONSORS AND PARTNERS" }),
+                    //       (0, Oe.jsxs)("p", {
+                    //         children: [
+                    //           "We extend heartfelt thanks and recognise each of our incredible partners, sponsors and donors; whose generous support and engagement play a vital role in not just making our work and projects possible, but in amplifying their impact, and driving our mission forward in practice.",
+                    //         ],
+                    //       }),
+                    //       (0, Oe.jsxs)("div", {
+                    //         className: "sponsor-group bioassembly-partners",
+                    //         children: [
+                    //           (0, Oe.jsx)("h7", { children: "BIOASSEMBLY PARTNERS" }),
+                    //           (0, Oe.jsx)("img", {
+                    //             src: "/media/sponsor-logos/arcteryx-logo.png",
+                    //             alt: "Arc'teryx",
+                    //             className: "partner-logo",
+                    //           }),
+                    //         ],
+                    //       }),
 
-                          //(0,Oe.jsx)("h7",{children:"BIOASSEMBLY COLLABORATING ORGANISATIONS"}),
-                          //(0,Oe.jsx)("img",{src:"/media/sponsor-logos/bioassembly-collaborators.png",alt:"Parks Victoria",className:"partner-logo"}),
-                          //(0,Oe.jsx)("img",{src:"/media/sponsor-logos/bioassembly-collaborators.png",alt:"Victoria Landcare Grants",className:"partner-logo"}),
-                          //(0,Oe.jsx)("img",{src:"/media/sponsor-logos/bioassembly-collaborators.png",alt:"Friends of Dandenong",className:"partner-logo"}),
-                          //(0,Oe.jsx)("img",{src:"/media/sponsor-logos/bioassembly-collaborators.png",alt:"Threatened Species Conservancy",className:"partner-logo"}),
+                    //       // (0, Oe.jsxs)("div", {
+                    //       //   className: "sponsor-group collaborating-orgs",
+                    //       //   children: [
+                    //       //     (0, Oe.jsx)("h7", { children: "BIOASSEMBLY COLLABORATING ORGANISATIONS" }),
+                    //       //     (0, Oe.jsx)("img", {
+                    //       //       src: "/media/sponsor-logos/bioassembly-collaborators.png",
+                    //       //       alt: "Parks Victoria",
+                    //       //       className: "partner-logo",
+                    //       //     }),
+                    //       //     (0, Oe.jsx)("img", {
+                    //       //       src: "/media/sponsor-logos/bioassembly-collaborators.png",
+                    //       //       alt: "Victoria Landcare Grants",
+                    //       //       className: "partner-logo",
+                    //       //     }),
+                    //       //     (0, Oe.jsx)("img", {
+                    //       //       src: "/media/sponsor-logos/bioassembly-collaborators.png",
+                    //       //       alt: "Friends of Dandenong",
+                    //       //       className: "partner-logo",
+                    //       //     }),
+                    //       //     (0, Oe.jsx)("img", {
+                    //       //       src: "/media/sponsor-logos/bioassembly-collaborators.png",
+                    //       //       alt: "Threatened Species Conservancy",
+                    //       //       className: "partner-logo",
+                    //       //     }),
+                    //       //   ],
+                    //       // }),
 
-                          (0, Oe.jsx)("h7", { children: "BIOASSEMBLY TRANSPORT PARTNERS" }),
-                          (0,Oe.jsx)("img",{src:"/media/sponsor-logos/cityofyarra-logo.png",alt:"City of Yarra",className:"partner-logo"}),
-                          (0,Oe.jsx)("img",{src:"/media/sponsor-logos/victorianbus-logo.png",alt:"Victorian Bus Charters",className:"partner-logo"}),
+                    //       (0, Oe.jsxs)("div", {
+                    //         className: "sponsor-group transport-partners",
+                    //         children: [
+                    //           (0, Oe.jsx)("h7", { children: "BIOASSEMBLY TRANSPORT PARTNERS" }),
+                    //           (0, Oe.jsx)("img", {
+                    //             src: "/media/sponsor-logos/cityofyarra-logo.png",
+                    //             alt: "City of Yarra",
+                    //             className: "partner-logo",
+                    //           }),
+                    //           (0, Oe.jsx)("img", {
+                    //             src: "/media/sponsor-logos/victorianbus-logo.png",
+                    //             alt: "Victorian Bus Charters",
+                    //             className: "partner-logo",
+                    //           }),
+                    //         ],
+                    //       }),
 
-                          (0, Oe.jsx)("h7", { children: "UNIVERSITY INDUSTRY PARTNERS" }),
-                          (0,Oe.jsx)("img",{src:"/media/sponsor-logos/unimelb-logo.png",alt:"University of Melbourne",className:"partner-logo"}),
-                          //(0,Oe.jsx)("img",{src:"/media/sponsor-logos/uni-industry-partners.png",alt:"RMIT University",className:"partner-logo"}),
+                    //       (0, Oe.jsxs)("div", {
+                    //         className: "sponsor-group university-industry-partners",
+                    //         children: [
+                    //           (0, Oe.jsx)("h7", { children: "UNIVERSITY INDUSTRY PARTNERS" }),
+                    //           (0, Oe.jsx)("img", {
+                    //             src: "/media/sponsor-logos/unimelb-logo.png",
+                    //             alt: "University of Melbourne",
+                    //             className: "partner-logo",
+                    //           }),
+                    //           // (0, Oe.jsx)("img", {
+                    //           //   src: "/media/sponsor-logos/uni-industry-partners.png",
+                    //           //   alt: "RMIT University",
+                    //           //   className: "partner-logo",
+                    //           // }),
+                    //         ],
+                    //       }),
 
-                          (0, Oe.jsx)("h7", { children: "ECOMMERCE PARTNERS" }),
-                          (0,Oe.jsx)("img",{src:"/media/sponsor-logos/auspost-logo.png",alt:"AusPost",className:"partner-logo"}),
+                    //       (0, Oe.jsxs)("div", {
+                    //         className: "sponsor-group ecommerce-partners",
+                    //         children: [
+                    //           (0, Oe.jsx)("h7", { children: "ECOMMERCE PARTNERS" }),
+                    //           (0, Oe.jsx)("img", {
+                    //             src: "/media/sponsor-logos/auspost-logo.png",
+                    //             alt: "AusPost",
+                    //             className: "partner-logo",
+                    //           }),
+                    //         ],
+                    //       }),
 
-                          (0,Oe.jsx)("h7",{children:"SUPPORTERS AND SPONSORS"}),
-                          (0,Oe.jsx)("img",{src:"/media/sponsor-logos/studiolegal-logo.png",alt:"Studio Legal",className:"partner-logo"}),
-                          (0,Oe.jsx)("img",{src:"/media/sponsor-logos/strangelove-logo.png",alt:"StrangeLove",className:"partner-logo"}),
-                          (0,Oe.jsx)("img",{src:"/media/sponsor-logos/nontoxtea-logo.png",alt:"Non Tox Tea",className:"partner-logo"}),
-                          (0,Oe.jsx)("img",{src:"/media/sponsor-logos/coffeesupreme-logo.png",alt:"Coffee Supreme",className:"partner-logo"}),
+                    //       (0, Oe.jsxs)("div", {
+                    //         className: "sponsor-group supporters-sponsors",
+                    //         children: [
+                    //           (0, Oe.jsx)("h7", { children: "SUPPORTERS AND SPONSORS" }),
+                    //           (0, Oe.jsx)("img", {
+                    //             src: "/media/sponsor-logos/studiolegal-logo.png",
+                    //             alt: "Studio Legal",
+                    //             className: "partner-logo",
+                    //           }),
+                    //           (0, Oe.jsx)("img", {
+                    //             src: "/media/sponsor-logos/strangelove-logo.png",
+                    //             alt: "StrangeLove",
+                    //             className: "partner-logo",
+                    //           }),
+                    //           (0, Oe.jsx)("img", {
+                    //             src: "/media/sponsor-logos/nontoxtea-logo.png",
+                    //             alt: "Non Tox Tea",
+                    //             className: "partner-logo",
+                    //           }),
+                    //           (0, Oe.jsx)("img", {
+                    //             src: "/media/sponsor-logos/coffeesupreme-logo.png",
+                    //             alt: "Coffee Supreme",
+                    //             className: "partner-logo",
+                    //           }),
+                    //         ],
+                    //       }),
 
-                          (0, Oe.jsx)("h7", { children: "PHILANTHROPIC DONORS" }),
-                          (0,Oe.jsx)("img",{src:"/media/sponsor-logos/kalliopeia-logo.png",alt:"Kalliopeia Foundation",className:"partner-logo"}),
-                        ],
-                      }),
-                    }),
+                    //       (0, Oe.jsxs)("div", {
+                    //         className: "sponsor-group philanthropic-donors",
+                    //         children: [
+                    //           (0, Oe.jsx)("h7", { children: "PHILANTHROPIC DONORS" }),
+                    //           (0, Oe.jsx)("img", {
+                    //             src: "/media/sponsor-logos/kalliopeia-logo.png",
+                    //             alt: "Kalliopeia Foundation",
+                    //             className: "partner-logo",
+                    //           }),
+                    //         ],
+                    //       }),
+
+                    //     ],
+                    //   }),
+                    // }),
                   ],
                 }),
                 (0, Oe.jsx)(Ve, {}),
